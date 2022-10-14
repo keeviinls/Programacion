@@ -93,6 +93,88 @@ public class PruebaGrupal {
             System.out.println("╚══════════════════════╝");
         }
 
+        else if (opcion == 'r')
+
+        {
+            System.out.println("  \uD83D\uDE0E TABLA  AJEDREZ \uD83D\uDE0E");
+
+            System.out.println("\033[33m╔══════════════════════╗");
+            System.out.print("\033[33m║");
+
+            System.out.print("\033[34m \u2656");
+            System.out.print(" ");
+            System.out.print("♗");
+            System.out.print(" ");
+            System.out.print("♗");
+            System.out.print(" ");
+            System.out.print("♚");
+            System.out.print(" ");
+            System.out.print("♛");
+            System.out.print(" ");
+
+            System.out.print("♗");
+            System.out.print(" ");
+            System.out.print("\u2658");
+            System.out.print(" ");
+            System.out.print("\u2656");
+            System.out.print("\033[33m ║");
+            System.out.print("");
+
+            System.out.println("");
+            System.out.print("\033[33m║");
+            System.out.print("\033[34m ♙");
+            System.out.print("\033[34m ♙");
+            System.out.print("\033[34m ♙");
+            System.out.print("\033[34m ♙");
+            System.out.print("\033[34m ♙");
+            System.out.print("\033[34m ♙");
+            System.out.print("\033[34m ♙");
+            System.out.print("\033[34m ♙");
+
+
+            System.out.print("\033[33m ║");
+            System.out.println("");
+
+            System.out.print("\033[33m║" + "                      " + "║");
+            System.out.println("");
+            System.out.print("\033[33m║" + "                      " + "║");
+            System.out.println("");
+            System.out.print("\033[33m║");
+
+            System.out.print("\033[31m \u2656");
+            System.out.print(" ");
+            System.out.print("♗");
+            System.out.print(" ");
+            System.out.print("♗");
+            System.out.print(" ");
+            System.out.print("♚");
+            System.out.print(" ");
+            System.out.print("♛");
+            System.out.print(" ");
+
+            System.out.print("♗");
+            System.out.print(" ");
+            System.out.print("\u2658");
+            System.out.print(" ");
+            System.out.print("\u2656");
+            System.out.print("\033[33m ║");
+            System.out.print("");
+
+            System.out.println("");
+            System.out.print("\033[33m║");
+            System.out.print("\033[31m ♙");
+            System.out.print("\033[31m ♙");
+            System.out.print("\033[31m ♙");
+            System.out.print("\033[31m ♙");
+            System.out.print("\033[31m ♙");
+            System.out.print("\033[31m ♙");
+            System.out.print("\033[31m ♙");
+            System.out.print("\033[31m ♙");
+            System.out.println("\033[33m ║");
+
+            System.out.println("╚══════════════════════╝");
+
+        }
 
         else {
             System.out.println("\033[31m \uD83D\uDC80 Bueno pues tu te lo pierdes \uD83D\uDC80\n");
