@@ -6,7 +6,7 @@ public class E2BC {
 
         while(numero <= 100) {
             System.out.println(numero);
-            numero+=5;
+            numero=numero+5;
         }
     }
 }

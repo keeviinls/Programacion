@@ -1,5 +1,6 @@
 package Session1710;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class E2EC {
@@ -9,6 +10,7 @@ public class E2EC {
         Scanner sc = new Scanner(System.in);
         System.out.println("Escribe un dia de la semana y te mostraremos que asignatura toca a primera hora");
         dia= sc.next();
+        dia = dia.toLowerCase();
 
         switch (dia){
             case "lunes": {System.out.println("Base de datos");break;}
