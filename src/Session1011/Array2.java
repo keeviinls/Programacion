@@ -36,9 +36,10 @@ public class Array2 {
         //imprimir los arrays que hemos creado
 
         for (int i = 0;i<array_4.length;i++){
-
+            System.out.println(" ");
             for (int j = 0;j<array_4[i].length;j++){
-                System.out.println(array_4[i][j]);
+                System.out.print(array_4[i][j]+ ",");
+
             }
 
         }
