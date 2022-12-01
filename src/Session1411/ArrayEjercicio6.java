@@ -12,9 +12,9 @@ public class ArrayEjercicio6 {
         System.out.println(java.util.Arrays.toString(numeros));
 
 
+
         java.util.Arrays.fill(numeros, 2, 4, 8);
         System.out.println(java.util.Arrays.toString(numeros));
     }
-
 
 }

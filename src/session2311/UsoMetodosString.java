@@ -45,9 +45,9 @@ public class UsoMetodosString {
         System.out.println(pais4.indexOf("a"));
         System.out.println(pais4.lastIndexOf("a"));
         String animal="perro";
-        System.out.println(animal.replace('0', 'a'));
+        System.out.println(animal.replace('o', 'a'));
         System.out.println(animal.substring(0,2));
-        System.out.println(animal.startsWith("pa"));
+        System.out.println(animal.startsWith("pe"));
         String pais20= " Qatar ";
         System.out.println(pais20.length());
         System.out.println(pais20.trim().length());
