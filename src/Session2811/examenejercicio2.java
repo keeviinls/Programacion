@@ -18,18 +18,31 @@ public class examenejercicio2 {
 
             switch (opcion){
                 case 1:
-                    System.out.println("Que numero quieres el sumatorio")
+                    System.out.println("Que numero quieres el sumatorio");
                     int numero = sc.nextInt();
 
                     int sumatorio = metodo1(numero);
+                    System.out.println("el sumatorio de "+numero+ " es "+sumatorio);
+                    break;
+                case 2:
+
 
                     break;
-                case 2: break;
                 case 3:
                     System.out.println("Gracias por utilizar el programa.");break;
 
             }
 
-        }while (opcion==3);
+        }while (opcion!=3);
+    }
+
+    private static int metodo1(int numero) {
+        int resultado=0;
+        for (int i=1;i<=numero;i++){
+            resultado=resultado+i;
+
+        }
+
+        return resultado;
     }
 }
