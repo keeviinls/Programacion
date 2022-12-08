@@ -20,7 +20,7 @@ public class Array2 {
 
         //segunda forma
         int[][] array_2 = {{1,2,6}, {3,4,8}};
-        System.out.println(array_1[1][1]);
+        System.out.println(array_2[0][1]);
 
 
         //tercera forma
@@ -38,7 +38,7 @@ public class Array2 {
         for (int i = 0;i<array_4.length;i++){
             System.out.println(" ");
             for (int j = 0;j<array_4[i].length;j++){
-                System.out.print(array_4[i][j]+ ",");
+                System.out.print("["+array_4[i][j]+ "]");
 
             }
 

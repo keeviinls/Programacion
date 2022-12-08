@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class E10BC {
     public static void main(String[] args) {
 
-        System.out.println("Introduce un numero ");
 
         double a, media, i = 0;
         double b = 0;

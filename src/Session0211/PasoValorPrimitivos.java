@@ -5,6 +5,7 @@ public class PasoValorPrimitivos {
         int edadKevin=21;
         cambiarEdadKevin(edadKevin);
         System.out.println("La edad de Kevin es "+edadKevin);
+
     }
 
     private static void cambiarEdadKevin(int edad){

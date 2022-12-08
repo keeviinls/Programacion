@@ -11,6 +11,7 @@ public class ForIncrementalDecremental {
         //bucle incremental
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("Por favor escribe un numero");
         numero = sc.nextInt();
 
         System.out.println("Vamos a mostrar por pantalla los numeros de 1 a " + numero);

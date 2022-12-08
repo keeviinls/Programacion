@@ -24,13 +24,18 @@ public class Array {
         //tercera forma
         Scanner sc = new Scanner(System.in);
         int[][] array_3 = new int[2][2];
-        for (int i=0;i<array_3.length;i++){
 
+        for (int i=0;i<array_3.length;i++){
             for (int j=0;j< array_3.length;j++){
                 System.out.println("Introduce un numero");
                 array_3[i][j]= sc.nextInt();
+
             }
+
+
+
         }
+
     }
 
 }

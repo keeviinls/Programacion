@@ -6,11 +6,11 @@ public class examenejercicio1  {
 
     public static void main(String[] args) {
         String texto="";
-        texto=solicitar_usuario(texto);
-        String [] array_string = convertir_array_string(texto);              //ponemos ""texto"" pq es lo q le entra
+        texto=solicitar_usuario(texto); //LLAMADA METODO
+        String [] array_string = convertir_array_string(texto);       //LLAMADA METODO       //ponemos ""texto"" pq es lo q le entra
         System.out.println(Arrays.toString(array_string));
-        int[] array_enteros= convertir_array_enteros(array_string);
-        int sumatorio= suma_enteros(array_enteros);
+        int[] array_enteros= convertir_array_enteros(array_string);   //LLAMADA METODO
+        int sumatorio= suma_enteros(array_enteros);   //LLAMADA METODO
         System.out.println("el resultado de la suma de los elementos del array"+Arrays.toString(array_enteros)+" es "+sumatorio);
 
 
@@ -45,7 +45,7 @@ public class examenejercicio1  {
 
     //B//
     private static String[] convertir_array_string(String texto) {
-        String [] array_string = texto.split(";"); //aqui hemos puesto ";" para probar solo, en verdad hayq ue poner ","
+        String [] array_string = texto.split(","); //aqui hemos puesto ";" para probar solo, en verdad hayq ue poner ","
         //split permite buscar el caracter o varios concreto y separarlos en distintos Strings que se meten en un array. En este caso sirve para la coma
         return array_string;
     }

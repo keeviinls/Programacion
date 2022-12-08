@@ -9,9 +9,9 @@ public class Arrayejercicio7 {
 
         //Si iniciamos a 0 no funciona, en el caso de que el usuario metiese un nombre que no sale,
         // sacara que el usuario esta en la posicion 0 porque no esta. Debe ser negativo.
+        Scanner sc = new Scanner(System.in);
         int posicion=-1;
         String busca;
-        Scanner sc = new Scanner(System.in);
         System.out.println("¿Que nombre quieres buscar ");
         busca = sc.next();
         posicion = buscar (lista, busca);
@@ -20,7 +20,7 @@ public class Arrayejercicio7 {
     }
 
     private static void imprimir(int posicion) {
-        System.out.println(posicion);
+        System.out.println("Esta en la posicion  "+posicion);
     }
 
     private static int buscar(String[] lista, String busca) {

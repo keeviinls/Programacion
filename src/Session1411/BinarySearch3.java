@@ -4,7 +4,10 @@ public class BinarySearch3 {
     public static void main(String[] args) {
 
         String nombre1="Sofia";
-        String nombre2="Elena";
+        nombre1=nombre1.toLowerCase();
+
+
+        String nombre2="sofia";
 
         if (nombre1.equals(nombre2)){
 

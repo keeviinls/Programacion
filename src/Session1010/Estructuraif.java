@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class Estructuraif {
     public static void main(String[] args) {
-        int a,b,mayor,menor=0;
+        int a = 0;
+        int b = 0;
+        int mayor = 0;
+        int menor = 0;
         Scanner sc=new Scanner(System.in);
         System.out.println("Introduzca el valor de a: " );
         a= sc.nextInt();

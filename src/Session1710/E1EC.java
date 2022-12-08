@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class E1EC {
     public static void main(String[] args) {
 
-        String mes="";
+        String mes;
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduzca un numero entre un numero y este indicara el mes");
         mes= sc.next();
