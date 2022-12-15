@@ -3,7 +3,7 @@ package session1711;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayEjercicio11 {
+public class ArrayEjercicio11_AGRANDARARRAY {
     public static void main(String[] args) {
         int [] array1 = {1,2};
         int [] array1simulado = new int[3];
