@@ -25,7 +25,7 @@ public class ConversionPrimitivoWrapper {
     System.out.println("Unboxing");
     c=a;
 
-    System.out.println("la variable tipo primitivo int c vale ahora"+c);
+    System.out.println("la variable tipo primitivo int c vale ahora"+a);
 
     //Beneficios de usar calses envoltorio a wrappers
     System.out.println("este metodo permite pasar una variable de tipo Integer a string "+a.toString());

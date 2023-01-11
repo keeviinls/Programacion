@@ -3,13 +3,13 @@ package session1711;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayEjercicio11 {
+public class ArrayEjercicio11_AGRANDARARRAY {
     public static void main(String[] args) {
         int [] array1 = {1,2};
         int [] array1simulado = new int[3];
         System.out.println("el array es" +Arrays.toString(array1));
         System.arraycopy(array1, 0, array1simulado, 0, array1.length);
-        System.out.println("el array es"+Arrays.toString(array1simulado));
+        System.out.println("el arraysimulado  es"+Arrays.toString(array1simulado));
         System.out.println("¿quieres intentar nuevoelemento ");
         Scanner sc = new Scanner(System.in);
         char opcion = sc.next().toLowerCase().charAt(0);

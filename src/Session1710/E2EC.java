@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class E2EC {
     public static void main(String[] args) {
 
-    String dia="";
+        String dia="";
         Scanner sc = new Scanner(System.in);
         System.out.println("Escribe un dia de la semana y te mostraremos que asignatura toca a primera hora");
         dia= sc.next();

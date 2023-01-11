@@ -12,17 +12,14 @@ public class EstructuraIfElse {
                 b=sc.nextInt();
                 mayor=a;
                 menor = b;
-                if (a<b){
-                    mayor=b;
-                    menor=a;
-                }
+
                 if (a==b){
                     System.out.println("los numeros son iguales");
                 }
                 else {
                     if (a>b){
                         mayor=b;
-                        menor =a;
+                        menor=a;
                     }
                     System.out.println("El mayor es "+mayor+" y el numero menor es "+ menor);
                 }
