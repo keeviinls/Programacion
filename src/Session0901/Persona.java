@@ -1,6 +1,7 @@
 package Session0901;
 
 public class Persona {
+    public static int contador=0;
         //atributos
         private String dni;
         private String nombre;
@@ -10,10 +11,14 @@ public class Persona {
 
 
         //metodos
-    public Persona() //SI LO PONGO EN PRIVATE, EN LA CLASE "USO_PERSONA" NO IRIA BIEN
-    {
+    public Persona() {contador ++;}//SI LO PONGO EN PRIVATE, EN LA CLASE "USO_PERSONA" NO IRIA BIEN
 
-
+    Persona(String nombre, String dni, String apellidos, int edad){
+        this.nombre=nombre;
+        this.dni=dni;
+        this.apellidos=apellidos;
+        this.edad=edad;
+        contador=contador+1;
     }
 
     public int getEdad() {
@@ -53,4 +58,6 @@ public class Persona {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+
 }
