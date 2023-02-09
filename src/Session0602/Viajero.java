@@ -1,37 +1,35 @@
 package Session0602;
 
+import java.util.Scanner;
+
 public class Viajero {
 
-    private String DNI;
+    public static int contador;
+    private String dni;
     private String nombre;
     private String apellidos;
     private String nacionalidad;
     private String direccion;
 
+    private static int num_ojos=2;
 
-    public Viajero(){
-        this.DNI = null;
-        this.nombre = null;
-        this.apellidos = null;
-        this.nacionalidad = null;
-        this.direccion = null;
-
-    }
-
-    public Viajero(String DNI, String nombre, String apellidos, String nacionalidad, String direccion){
-        this.DNI= DNI;
+    public Viajero(String dni, String nombre, String apellidos, String nacionalidad, String direccion) {
+        this.dni = dni;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.nacionalidad = nacionalidad;
         this.direccion = direccion;
+        contador++;
     }
 
-    public String getDNI() {
-        return DNI;
+    public Viajero() {
+        contador++;
     }
 
-    public void setDNI(String DNI) {
-        this.DNI = DNI;
+    public String getdni() {return dni; }
+
+    public void setdni(String dni) {
+        this.dni = dni;
     }
 
     public String getNombre() {
@@ -64,5 +62,38 @@ public class Viajero {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    public void getInfo(Formato modo){
+        String entrada="";
+        Scanner sc = new Scanner(System.in);
+        switch (modo){
+            case normal:
+                System.out.println("El dni del pasajero es "+dni);
+                System.out.println("El nombre del pasajero es "+nombre);
+                System.out.println("Los apellidos del pasajero son "+apellidos);
+                System.out.println("La nacionalidad del pasajero es "+nacionalidad);
+                System.out.println("La direccion del pasajero es "+direccion);
+                break;
+            case pausado:
+
+                System.out.println("El dni del pasajero es "+dni);
+                entrada=sc.nextLine();
+
+                System.out.println("El nombre del pasajero es "+nombre);
+                entrada=sc.nextLine();
+
+                System.out.println("Los apellidos del pasajero son "+apellidos);
+                entrada=sc.nextLine();
+
+                System.out.println("La nacionalidad del pasajero es "+nacionalidad);
+                entrada=sc.nextLine();
+
+                System.out.println("La direccion del pasajero es "+direccion);
+                entrada=sc.nextLine();
+                break;
+
+        }
+
     }
 }
