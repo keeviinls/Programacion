@@ -7,6 +7,7 @@ public class ClaseA {
 
     ClaseA(String mensaje){
         System.out.println(mensaje);
+        System.out.println("Hola A");
     }
 
     ClaseA(int numero){
