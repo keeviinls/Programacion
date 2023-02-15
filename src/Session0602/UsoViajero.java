@@ -28,6 +28,7 @@ public class UsoViajero {
         System.out.println("Introduzcame su dni");
         viajero4.setdni(sc.nextLine());
 
+
         System.out.println("Introduzcame su nombre");
         viajero4.setNombre(sc.nextLine());
 
