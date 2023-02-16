@@ -4,6 +4,14 @@ public class Vehiculos {
     protected int kilometros;
     protected String matricula;
 
+    public Vehiculos() {
+    }
+
+    public Vehiculos(int kilometros, String matricula) {
+        this.kilometros = kilometros;
+        this.matricula = matricula;
+    }
+
     public int getKilometros() {
         return kilometros;
     }
@@ -20,6 +28,15 @@ public class Vehiculos {
         this.matricula = matricula;
     }
 
-    public
+    public void run(int km){
+        this.kilometros = this.kilometros + km;
+    }
 
+
+    public String showInfo() {
+        return ("Vehiculos{" +
+                "kilometros=" + kilometros +
+                ", matricula='" + matricula + '\'' +
+                '}');
+    }
 }
