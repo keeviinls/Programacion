@@ -1,16 +1,44 @@
 package Session1602;
 
-public class Paciente extends Medico {
+public class Paciente {
 
-    protected String nombre;
+    private String nombre;
 
-    protected String dni;
+    private String dni;
 
-    public Paciente(String nombre, String apellido, int n_colegiado, Paciente[] lista_pacientes, String nombre1, String dni) {
-        super(nombre, apellido, n_colegiado, lista_pacientes);
-        this.nombre = nombre1;
+    private int anio_i;
+
+
+    public Paciente(String nombre, String dni, int anio_i) {
+        this.nombre = nombre;
+        this.dni = dni;
+        this.anio_i = anio_i;
+    }
+
+    public Paciente() {
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
+    public int getAnio_i() {
+        return anio_i;
+    }
 
+    public void setAnio_i(int anio_i) {
+        this.anio_i = anio_i;
+    }
 }

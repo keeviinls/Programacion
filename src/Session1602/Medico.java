@@ -51,13 +51,15 @@ public class Medico {
         this.lista_pacientes = lista_pacientes;
     }
 
-    @Override
-    public String toString() {
-        return "Medico{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", n_colegiado=" + n_colegiado +
-                ", lista_pacientes=" + Arrays.toString(lista_pacientes) +
-                '}';
+    public boolean trata(){
+        boolean resultado=false;
+        for (int i=0;i<lista_pacientes.length;i++){
+            if (Dni.equals(lista_pacientes[i].getDni())){
+                resultado=true;
+                break;
+            }
+        }
+
+        return resultado;
     }
 }
