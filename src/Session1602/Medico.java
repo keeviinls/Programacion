@@ -51,15 +51,4 @@ public class Medico {
         this.lista_pacientes = lista_pacientes;
     }
 
-    public boolean trata(){
-        boolean resultado=false;
-        for (int i=0;i<lista_pacientes.length;i++){
-            if (Dni.equals(lista_pacientes[i].getDni())){
-                resultado=true;
-                break;
-            }
-        }
-
-        return resultado;
-    }
 }
