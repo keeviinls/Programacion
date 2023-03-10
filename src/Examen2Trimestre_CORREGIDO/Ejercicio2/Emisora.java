@@ -8,6 +8,60 @@ public abstract class Emisora implements Emitible{
     protected int identificador;
     protected String nombre_emisora;
     protected int anyo_creacion;
+
     protected boolean emitiendo=false;
     protected int num_oyentes;
+
+
+    public Emisora(String nombre_emisora, int anyo_creacion, int num_oyentes) throws CreacionInvalida {
+        this.nombre_emisora = nombre_emisora.toUpperCase();
+        this.identificador=num_emisoras++;
+        if (anyo_creacion < 1879){
+            throw new CreacionInvalida("el año de creacion debe ser igual o superior a 1879");
+        }
+        this.anyo_creacion = anyo_creacion;
+        this.num_oyentes = num_oyentes;
+        System.out.println("Se ha creado la emisora "+identificador);
+    }
+
+    public abstract double ganancias();
+
+    public boolean estaEmitiendo(){
+        return emitiendo;
+    }
+
+    public static int getNum_emisoras() {
+        return num_emisoras;
+    }
+
+    public int getIdentificador() {
+        return identificador;
+    }
+
+    public String getNombre_emisora() {
+        return nombre_emisora;
+    }
+
+    public void setNombre_emisora(String nombre_emisora) {
+        this.nombre_emisora = nombre_emisora.toUpperCase();
+    }
+
+    public int getAnyo_creacion() {
+        return anyo_creacion;
+    }
+
+    public void setAnyo_creacion(int anyo_creacion) throws CreacionInvalida {
+        if (anyo_creacion < 1879){
+            throw new CreacionInvalida("el año de creacion debe ser igual o superior a 1879");
+        }
+        this.anyo_creacion = anyo_creacion;
+    }
+
+    public int getNum_oyentes() {
+        return num_oyentes;
+    }
+
+    public void setNum_oyentes(int num_oyentes) {
+        this.num_oyentes = num_oyentes;
+    }
 }
