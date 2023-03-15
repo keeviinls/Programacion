@@ -1,5 +1,9 @@
 package Examen2Trimestre_CORREGIDO.Ejercicio2;
-
+/***
+ * @author KevinLoayzaS
+ * @version 1.0
+ * Esta clase emisora permite almacenar informacion sobre emisoras
+ */
 public abstract class Emisora implements Emitible{
 
     //atributos
@@ -12,7 +16,16 @@ public abstract class Emisora implements Emitible{
     protected boolean emitiendo=false;
     protected int num_oyentes;
 
+    //constructor
 
+    /***
+     *
+     * @param nombre_emisora
+     * @param anyo_creacion
+     * @param num_oyentes
+     * @throws CreacionInvalida
+     * este constructor permite crear una emisora a partir de los parametros de entrada indicados
+     */
     public Emisora(String nombre_emisora, int anyo_creacion, int num_oyentes) throws CreacionInvalida {
         this.nombre_emisora = nombre_emisora.toUpperCase();
         this.identificador=num_emisoras++;
