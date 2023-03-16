@@ -1,6 +1,6 @@
 package PRACTICA_CORREGIDA.Ejercicio1;
 
-public class Electrodomestico {
+public abstract class Electrodomestico {
     protected float precio_base = 100;
     protected float precio_final;
     //El color tambien valdria con enumerado
@@ -22,13 +22,19 @@ public class Electrodomestico {
     //constructor con todos los atributos
 
 
-    public Electrodomestico(float precio_base, float precio_final, String color, Consumo consumo_energetico, float peso) throws ProductoIncorrecto {
-        this.precio_base = precio_base;
+    public Electrodomestico(float precio_base, float precio_final, String color, String consumo_energetico, float peso) throws ProductoIncorrecto {
+        if (comprobarConsumoEnergetico(consumo_energetico.toUpperCase().charAt(0)))
+        {
+            this.precio_base = precio_base;
+            this.consumo_energetico=Consumo.valueOf(consumo_energetico.toUpperCase());
+        }
+        else {
+            throw new ProductoIncorrecto("No es correcta la letra con el precio");
+        }
         this.precio_final = precio_final;
         if (comprobarColor(color)){
             this.color=color;
         }
-        this.consumo_energetico = consumo_energetico;
         this.peso = peso;
     }
 
@@ -76,4 +82,32 @@ public class Electrodomestico {
         return resultado;
     }
 
+    public float preciofinal(){
+        float resultado = 0;
+        switch (consumo_energetico){
+            case A: precio_final = precio_base + 100;break;
+            case B: precio_final = precio_base + 80;break;
+            case C: precio_final = precio_base + 60;break;
+            case D: precio_final = precio_base + 50;break;
+            case E: precio_final = precio_base + 30;break;
+            case F: precio_final = precio_base + 10;break;
+
+        }
+        if (peso > 0 && peso <=19){
+            precio_final += 10;
+        }
+        else if (peso >= 20 && peso <=49) {
+            precio_final+=50;
+        }
+        else if (peso >= 50 && peso <=79) {
+            precio_final+=80;
+        }
+        else{
+            precio_final +=100;
+        }
+
+        return resultado;
+    }
+
+    public abstract float precioFinal();
 }
