@@ -4,6 +4,7 @@ import java.awt.*;
 
 public class UsoElectrodomestico {
     public static void main(String[] args) {
+
         Electrodomestico [] listado_electrodomesticos = new Electrodomestico[5];
 
         Television tele1=new Television(200,5, 50, true);
