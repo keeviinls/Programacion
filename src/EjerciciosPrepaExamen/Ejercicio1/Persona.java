@@ -26,7 +26,7 @@ public class Persona {
             throw new EdadIncorrecta("no se puede introducir una edad negativa");
         }
         this.edad = edad;
-        if (!Sexo.valueOf(sexo).equals(Sexo.M) || sexo.equals(Sexo.valueOf(sexo).equals(Sexo.H))) {
+        if (!Sexo.valueOf(sexo).equals(Sexo.M) && sexo.equals(Sexo.valueOf(sexo).equals(Sexo.H))) {
             throw new SexoIncorrecto("el sexo introducido no es valido");
         }
         this.sexo = Sexo.valueOf(sexo);
@@ -38,7 +38,7 @@ public class Persona {
             throw new EdadIncorrecta("no se puede introducir una edad negativa");
         }
         this.edad = edad;
-        if (!Sexo.valueOf(sexo).equals(Sexo.M) || sexo.equals(Sexo.valueOf(sexo).equals(Sexo.H))) {
+        if (!Sexo.valueOf(sexo).equals(Sexo.M) && sexo.equals(Sexo.valueOf(sexo).equals(Sexo.H))) {
             throw new SexoIncorrecto("el sexo introducido no es valido");
         }
 
@@ -78,7 +78,7 @@ public class Persona {
      * @return si alguien es mayor de edad ( true ) o menos de edad ( false )
      */
 
-    private boolean esMayorEdad(){
+    public boolean esMayorEdad(){
         boolean resultado = false;
         if (edad >=18){
             resultado = true;
@@ -177,7 +177,7 @@ public class Persona {
     }
 
     public void setSexo(String sexo) throws SexoIncorrecto {
-        if (!Sexo.valueOf(sexo).equals(Sexo.M) || sexo.equals(Sexo.valueOf(sexo).equals(Sexo.H))) {
+        if (!Sexo.valueOf(sexo).equals(Sexo.M) && sexo.equals(Sexo.valueOf(sexo).equals(Sexo.H))) {
             throw new SexoIncorrecto("el sexo introducido no es valido");
         }
         this.sexo = Sexo.valueOf(sexo);
