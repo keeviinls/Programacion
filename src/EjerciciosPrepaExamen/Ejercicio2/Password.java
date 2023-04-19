@@ -1,7 +1,5 @@
 package EjerciciosPrepaExamen.Ejercicio2;
 
-import Session0102.Marca;
-
 public class Password {
 
     private final static int LONG_DEFECTO = 8;
@@ -18,9 +16,7 @@ public class Password {
         }
         this.longitud = longitud;
         this.contrasenya = generarPassword();
-        if (!esFuerte()){
-            throw new ContrasenyaIncorrecta("la contraseña generada no es totalmente segura");
-        }
+
     }
 
     public int getLongitud() {
@@ -37,35 +33,33 @@ public class Password {
         this.contrasenya=generarPassword();
     }
 
-    public boolean esFuerte(){
-        boolean resultado=false;
-        int cuentanumeros=0;
-        int cuentamayusculas=0;
-        int cuentaminusculas=0;
+    public Password esFuerte() {
+        boolean resultado = false;
+        int cuentanumeros = 0;
+        int cuentamayusculas = 0;
+        int cuentaminusculas = 0;
 
-        for (int i=0;i<contrasenya.length();i++){
-            if (contrasenya.charAt(i)>=96 && contrasenya.charAt(i)>=122){
+        for (int i = 0; i < contrasenya.length(); i++) {
+            if (contrasenya.charAt(i) >= 96 && contrasenya.charAt(i) >= 122) {
                 cuentaminusculas++;
-            }
-            else {
-                if (contrasenya.charAt(i)>=65 && contrasenya.charAt(i)<=90){
+            } else {
+                if (contrasenya.charAt(i) >= 65 && contrasenya.charAt(i) <= 90) {
                     cuentamayusculas++;
-                }
-                else {
+                } else {
                     cuentanumeros++;
                 }
             }
         }
 
-        if (cuentanumeros>=5 && cuentaminusculas>=1 && cuentamayusculas>=2){
-            resultado=true;
+        if (cuentanumeros >= 5 && cuentaminusculas >= 1 && cuentamayusculas >= 2) {
+            resultado = true;
             System.out.println("La contraseña es fuerte");
-        }
-        else {
+        } else {
             System.out.println("La contraseña es debil");
         }
 
-        return resultado;
+        //return resultado;
+        return null;
     }
 
     private String generarPassword() {
