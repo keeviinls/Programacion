@@ -5,10 +5,10 @@ public class Jugador {
     int edad;
     Posicion posi;
 
-    public Jugador(String nombre, int edad, Posicion posi) {
+    public Jugador(String nombre, int edad, String posi) {
         this.nombre = nombre;
         this.edad = edad;
-        this.posi = posi;
+        this.posi = Posicion.valueOf(posi);
     }
 
     public String getNombre() {
@@ -31,7 +31,15 @@ public class Jugador {
         return posi;
     }
 
-    public void setPosi(Posicion posi) {
-        this.posi = posi;
+    public void setPosi(String posi) {
+        this.posi = Posicion.valueOf(posi);
+    }
+
+    @Override
+    public String toString() {
+        return "{Jugador " + nombre + '\'' +
+                ", edad=" + edad +
+                ", posicion=" + posi +
+                '}';
     }
 }
