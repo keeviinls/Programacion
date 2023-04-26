@@ -1,7 +1,5 @@
 package session2404;
 
-import Examen2Trimestre_CORREGIDO.Ejercicio1.Categoria;
-
 public abstract class Persona {
     protected String dni;
     protected String nombre;
@@ -85,7 +83,7 @@ public abstract class Persona {
         return icm;
     }
 
-    public Categoria getEstado() {
+    public session2404.Categoria getEstado() {
         return estado;
     }
 

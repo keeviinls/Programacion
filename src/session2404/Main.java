@@ -20,6 +20,9 @@ public class Main {
         System.out.println("Imprimir de menor a mayor icm");
         Filtrados.OrderByHigherToLowerIMC();
 
+        System.out.println("Filtrar los chicos con icm menor a 25");
+        Filtrados.printArray(Filtrados.filterbyGenderICMLower(25,'H'));
+
 
 
 
