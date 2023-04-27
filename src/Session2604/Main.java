@@ -33,13 +33,14 @@ public class Main {
             System.out.println("................");
             opcion = sc.nextInt();
                 switch (opcion){
-                    case 0 : System.out.println("Gracias po usar el programa");break;
+                    case 0 : System.out.println("Gracias por usar el programa");break;
                     case 1:
                         System.out.println("Introduzca por favor el numero que quiere añadir al arraylist");
                         numero = sc.nextDouble();
                         add(numero);break;
                     case 2:
                         System.out.println("Introduzca por favor el numero que quiere buscar en el arraylist");
+                        numero=sc.nextDouble();
                         buscar(numero);break;
                     case 3:
                         System.out.println("Introduzca por favor el numero que quiere modificar en el arraylist");
@@ -64,6 +65,25 @@ public class Main {
         } while (opcion != 0);
     }
 
+    private static void imprimir_array() {
+        System.out.println(lista_reales.toString());
+    }
+
+    private static void add_specific(double numero, int posicion) {
+
+        lista_reales.set(posicion,numero);
+
+    }
+
+    private static void eliminar(double numero) {
+        lista_reales.remove(numero);
+        /**
+         * ESTA FORMA TAMBIEN FUNCIONARIA
+         * lista_reales.remove(lista_reales.indexOf(numero));
+         */
+
+    }
+
     private static void modificar(double numero_antiguo, double numero_nuevo) {
         /**
          * TAMBIEN SE PUEDE USAR EL indexOf en lugar de contains en el primer IF
@@ -73,9 +93,6 @@ public class Main {
             int posicion = lista_reales.indexOf(numero_antiguo);
             lista_reales.set(posicion,numero_nuevo);
         }
-
-
-
     }
 
     private static void buscar(double numero) {
